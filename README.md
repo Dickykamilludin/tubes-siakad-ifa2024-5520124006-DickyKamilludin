@@ -1,80 +1,47 @@
-## Demo Aplikasi
+## Deskripsi Singkat Aplikasi
 
-### Link Hosting
+Sistem Informasi Akademik (SIAKAD) adalah aplikasi berbasis **Laravel 12** yang dirancang untuk membantu pengelolaan data akademik di lingkungan kampus. Aplikasi ini menerapkan sistem **multi-role** yang membedakan hak akses antara **Admin** dan **Mahasiswa**.
 
-Aplikasi dapat diakses melalui :
+Admin bertugas mengelola seluruh data akademik seperti data dosen, mahasiswa, mata kuliah, jadwal perkuliahan, dan Kartu Rencana Studi (KRS). Sementara itu, Mahasiswa hanya dapat melihat informasi akademik serta melihat data KRS yang dimiliki tanpa dapat mengubah data.
 
-https://amanda.ifalgorithm24.web.id/
+Aplikasi dibangun menggunakan **Laravel 12**, **PHP 8**, **MySQL**, **Bootstrap 5**, serta **Laravel Breeze Authentication** untuk proses autentikasi pengguna.
 
-### Akun Login Admin (Dosen)
+---
 
-Email :
+## Penjelasan Singkat Fungsi Masing-Masing Halaman
 
-admin@gmail.com
+### 1. Halaman Login
+Halaman login digunakan sebagai pintu masuk aplikasi. Pengguna masuk menggunakan email dan password sesuai hak akses yang dimiliki, kemudian sistem akan mengarahkan ke dashboard masing-masing.
 
-Password :
+### 2. Dashboard Admin
+Dashboard Admin menampilkan halaman utama setelah admin berhasil login. Dari halaman ini admin dapat mengakses seluruh menu pengelolaan data akademik.
 
-password
+### 3. Data Dosen
+Halaman ini digunakan untuk mengelola data dosen. Admin dapat menambahkan, mengubah, menghapus, serta melihat daftar dosen yang tersimpan dalam sistem.
 
-### Akun Login Mahasiswa
+### 4. Data Mahasiswa
+Halaman ini digunakan untuk mengelola data mahasiswa. Admin dapat melakukan proses tambah, ubah, hapus, dan melihat seluruh data mahasiswa.
 
-Email :
+### 5. Data Mata Kuliah
+Halaman ini digunakan untuk mengelola informasi mata kuliah seperti kode mata kuliah, nama mata kuliah, dan jumlah SKS. Data ini menjadi acuan dalam penyusunan jadwal dan KRS.
 
-mahasiswa@gmail.com
+### 6. Data Jadwal Kuliah
+Halaman ini digunakan untuk mengatur jadwal perkuliahan. Admin dapat menentukan mata kuliah, dosen pengajar, hari, jam, dan kelas sehingga jadwal dapat dilihat oleh mahasiswa.
 
-Password :
+### 7. Data KRS
+Halaman ini digunakan untuk mengelola data Kartu Rencana Studi (KRS). Admin dapat melihat, menambah, maupun menghapus data pengambilan mata kuliah oleh mahasiswa.
 
-password
+### 8. Dashboard Mahasiswa
+Dashboard Mahasiswa merupakan halaman utama setelah mahasiswa login. Halaman ini memberikan akses menuju informasi akademik yang dapat dilihat oleh mahasiswa.
 
-## Akun Login
+### 9. Halaman Mata Kuliah (Mahasiswa)
+Halaman ini menampilkan daftar mata kuliah yang tersedia sehingga mahasiswa dapat melihat informasi mata kuliah yang ditawarkan.
 
-### Admin
+### 10. Halaman Jadwal Kuliah (Mahasiswa)
+Halaman ini menampilkan jadwal perkuliahan yang telah ditentukan oleh admin sehingga mahasiswa dapat mengetahui hari, jam, dan mata kuliah yang akan diikuti.
 
-Email :
-
-admin@gmail.com
-
-Password :
-
-password
-
-### Mahasiswa
-
-Email :
-
-mahasiswa@gmail.com
-
-Password :
-
-password
-
-# Sistem Informasi Akademik (SIAKAD)
-
-## Deskripsi
-
-Sistem Informasi Akademik (SIAKAD) berbasis Laravel yang digunakan untuk mengelola data akademik kampus.
-
-Aplikasi memiliki dua hak akses:
-
-### Admin (Dosen)
-
-Admin dapat:
-
-- Mengelola Data Dosen
-- Mengelola Data Mahasiswa
-- Mengelola Data Mata Kuliah
-- Mengelola Data Jadwal Kuliah
-- Mengelola Data KRS
-- Menambah, mengubah, dan menghapus data
-
-### Mahasiswa
-
-Mahasiswa dapat:
-
-- Melihat Data Mata Kuliah
-- Melihat Jadwal Kuliah
-- Melihat Data KRS
-- Tidak dapat menambah, mengubah, maupun menghapus data
+### 11. Halaman KRS Mahasiswa
+Halaman ini menampilkan daftar mata kuliah yang telah diambil oleh mahasiswa sebagai Kartu Rencana Studi (KRS). Mahasiswa hanya dapat melihat data tersebut sesuai hak akses yang diberikan.
 
 ---
 
@@ -84,127 +51,18 @@ Mahasiswa dapat:
 - PHP 8
 - MySQL
 - Bootstrap 5
-- Breeze Authentication
+- Laravel Breeze Authentication
+- Eloquent ORM
 - Git & GitHub
-
----
-
-## Fitur Sistem
-
-### Login Multi Role
-
-- Admin (Dosen)
-- Mahasiswa
-
-### Admin
-
-- CRUD Dosen
-- CRUD Mahasiswa
-- CRUD Mata Kuliah
-- CRUD Jadwal Kuliah
-- CRUD KRS
-
-### Mahasiswa
-
-- Lihat Mata Kuliah
-- Lihat Jadwal
-- Lihat KRS
 
 ---
 
 ## Akun Login
 
 ### Admin
-
-Email:
-
-```text
-admin@gmail.com
-```
-
-Password:
-
-```text
-password
-```
+- **Email:** admin@gmail.com
+- **Password:** password
 
 ### Mahasiswa
-
-Email:
-
-```text
-mahasiswa@gmail.com
-```
-
-Password:
-
-```text
-password
-```
-
----
-
-# Dokumentasi Tampilan
-
-## Login Admin
-
-![Login](screenshots/login.png)
-
----
-
-## Dashboard Admin
-
-![Dashboard Admin](screenshots/dashboard-adm.png)
-
----
-
-## Data Dosen
-
-![Data Dosen](screenshots/data-dosen.png)
-
----
-
-## Data Mata Kuliah (Admin)
-
-![Data Mata Kuliah](screenshots/data-matakuliah.png)
-
----
-
-## Data Jadwal (Admin)
-
-![Data Jadwal](screenshots/jadwal.png)
-
----
-
-## Data KRS (Admin)
-
-![Data KRS](screenshots/krs.png)
-
----
-
-## Dashborad Mahasiswa
-
-![Mata Kuliah Mahasiswa](screenshots/dashboar-mhs.png)
-
----
-
-## Struktur Database
-
-Tabel yang digunakan:
-
-- users
-- dosens
-- mahasiswas
-- mata_kuliahs
-- jadwals
-- krs
-
----
-
-## Author
-
-Kamil Rizki Kusuma
-
-Universitas Suryakancana
-
-Mata Kuliah Pemrograman Web Lanjut
+- **Email:** mahasiswa@gmail.com
+- **Password:** password
