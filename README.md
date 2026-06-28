@@ -66,3 +66,47 @@ Halaman ini menampilkan daftar mata kuliah yang telah diambil oleh mahasiswa seb
 ### Mahasiswa
 - **Email:** mahasiswa@gmail.com
 - **Password:** password
+
+# Dokumentasi Tampilan
+
+## Login Admin
+
+![Login](screenshots/login.png)
+
+---
+
+## Dashboard Admin
+
+![Dashboard Admin](screenshots/dashboard-adm.png)
+
+---
+
+## Data Dosen
+
+![Data Dosen](screenshots/data-dosen.png)
+
+---
+
+## Data Mata Kuliah (Admin)
+
+![Data Mata Kuliah](screenshots/data-matakuliah.png)
+
+---
+
+## Data Jadwal (Admin)
+
+![Data Jadwal](screenshots/jadwal.png)
+
+---
+
+## Data KRS (Admin)
+
+![Data KRS](screenshots/krs.png)
+
+---
+
+## Dashborad Mahasiswa
+
+![Mata Kuliah Mahasiswa](screenshots/dashboar-mhs.png)
+
+---
